@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import MyInfo from './components/MyInfo'
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
@@ -25,7 +26,7 @@ serviceWorker.unregister();
 
 // ReactDOM.render(
 //     <MyApp />, //Self closing tag
-//     document.getElementById('root') //selects the node that will be rendered to.
+//     document.getElementById('root1') //selects the node that will be rendered to.
 // )
 
 // ReactDOM.render(
@@ -34,7 +35,7 @@ serviceWorker.unregister();
 //       <li>sadf</li>
 //       <li>asdf</li>
 //     </ul>,
-//     document.getElementById('root')
+//     document.getElementById('root2')
 //   )
 
 //   ReactDOM.render(
@@ -47,22 +48,8 @@ serviceWorker.unregister();
 //               <li>5</li>
 //           </ul>
 //       </div>,
-//       document.getElementById('root')
+//       document.getElementById('root3')
 //   )
-
-
-function MyInfo() {
-   return( <div>
-       <h1>Jared Womack</h1>
-        <p>I am supreme overlord of the universe</p>
-        <ul>
-            <li>Lisbon, Portugal</li>
-            <li>Barcelona, Spain</li>
-            <li>Nice, France</li>
-        </ul>
-    </div>
-   )
-}
 
 ReactDOM.render(
     <MyInfo />,
