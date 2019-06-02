@@ -1,20 +1,14 @@
 import React from 'react'
-import Footer from './Footer'
-import Navbar from './Navbar'
-import MainContent from './MainContent'
-
+import Checkbox from './Checkbox'
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <MainContent />
-      <Footer />
-
-
-  </div>
+      <Checkbox />
+    </div>
   )
 }
 
 export default App
+
 
