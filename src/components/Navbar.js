@@ -6,9 +6,15 @@ function Navbar() {
         <div>
             <nav>
                 <ul>
-                    <li><a href="#"></a>Home</li>
-                    <li><a href="#"></a>About</li>
-                    <li><a href="#"></a>Contact</li>
+                    <li className='nav-item'>
+                        <a href="#">Home</a>
+                    </li>
+                    <li className='nav-item'>
+                        <a href="#">About</a>
+                        </li>
+                    <li className='nav-item'>
+                        <a href="#">Contact</a>
+                        </li>
                 </ul>
             </nav>
         </div>
