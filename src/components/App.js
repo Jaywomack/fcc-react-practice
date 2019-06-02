@@ -10,18 +10,25 @@ function App() {
   const date = new Date()
   const hours = date.getHours()
   let timeOfDay
+  const styles = {
+    backgroundColor: 'black'
+  }
 
   if( hours < 12) {
     timeOfDay = 'morning'
+    styles.color = 'green'
   } else if (hours >= 12 && hours < 17) {
     timeOfDay = 'afternoon'
+    styles.color = 'red'
   } else{
     timeOfDay = 'night'
   }
 
+  
+
   return (
     <div>
-      <h1>Hello, {`${firstName} ${lastName}`} it is currently about {date.getHours() % 12} o'clock! Good {`${timeOfDay}`} </h1>
+      <h1 style={styles}>Hello, {`${firstName} ${lastName}`} it is currently about {date.getHours() % 12} o'clock! Good {`${timeOfDay}`} </h1>
       <Navbar />
       <MainContent />
       <Checkbox />
